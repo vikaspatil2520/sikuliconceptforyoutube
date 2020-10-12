@@ -2,7 +2,6 @@ package com.practice.sikuliconcept;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.sikuli.script.FindFailed;
@@ -16,9 +15,9 @@ public class YouTubeTest {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-/*
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
 		driver.get("https://www.youtube.com/watch?v=07d2dXHYb94");
 
 		Thread.sleep(10000);
@@ -26,11 +25,11 @@ public class YouTubeTest {
 		// create the object of screen class
 		Screen screen = new Screen();
 
-		 add externally jar 
+
 
 		// click on play button
 		// Pattern playImg=new
-		// Pattern("D:\\testing-workspace\\sikuliconcept\\yt_play.PNG");
+		
 		screen.find("D:\\testing-workspace\\sikuliconcept\\yt_play.PNG");
 		screen.click("D:\\testing-workspace\\sikuliconcept\\yt_play.PNG");
 		System.out.println("clicked on play button");
@@ -66,8 +65,8 @@ public class YouTubeTest {
 		screen.click("D:\\testing-workspace\\sikuliconcept\\yt_play.PNG");
 		System.out.println("clicked on play button");
 		
-		Thread.sleep(5000);*/
-		
+		Thread.sleep(5000);
+		/*
 		driver.get("https://www.google.com/");
 		Thread.sleep(5000);
 		
@@ -75,6 +74,6 @@ public class YouTubeTest {
 		Screen screen = new Screen();
 		screen.find("D:\\testing-workspace\\sikuliconcept\\googleSearchBtn.png");
 		screen.click("D:\\testing-workspace\\sikuliconcept\\googleSearchBtn.png");
-		System.out.println(" clicked on google search button");
+		System.out.println(" clicked on google search button");*/
 	}
 }
