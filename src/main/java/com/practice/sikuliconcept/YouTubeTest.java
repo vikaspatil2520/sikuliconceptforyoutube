@@ -75,6 +75,6 @@ public class YouTubeTest {
 		Screen screen = new Screen();
 		screen.find("D:\\testing-workspace\\sikuliconcept\\googleSearchBtn.png");
 		screen.click("D:\\testing-workspace\\sikuliconcept\\googleSearchBtn.png");
-		System.out.println("clicked on google search button");
+		System.out.println(" clicked on google search button");
 	}
 }
